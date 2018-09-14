@@ -8,7 +8,7 @@
  ###  -Step 1. Create a login Button
       -Make a login button in you app's landing page and
        pass it auth service login url.
-      (http://localhost:3001/#loginemail)
+      (https://authx-40baa.firebaseapp.com/#loginemail)
 ### -step 2. Pass Redirect URL
 
     -Pass the redirect URL (which you entered at the time of app registration) 
