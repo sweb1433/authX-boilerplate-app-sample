@@ -24,5 +24,5 @@
 ### Step 4. Example
     - Example: 
       https://authx-40baa.firebaseapp.com/#loginemail?apto=[YOUR_REDIRECT_URL]&apid=[YOUR_APP_ID]
-    
+    - replace [YOUR_REDIRECT_URL] and [YOUR_APP_ID] with your redirect url and app id respectively.
 
