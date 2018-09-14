@@ -1,8 +1,7 @@
 document.getElementById("message").innerHTML = "login required!!!!!";
 
 function myFunction() {
-  //var myWindow = window.open("http://localhost:3001/#loginemail?apto=app1.com&apid=wenasgdj", "", "width=500,height=600");
-  location.replace("http://localhost:3001/#loginemail?apto=app1.com&apid=wenasgdj");
+  location.replace("[AUTHX_URL]/#loginemail?apto=[YOUR_REDIRECT_URL]&apid=[YOUR_UNIQUE_APID]");
 }
 var url = window.location.href;
   var jwtToken = url.split('#')[1];
