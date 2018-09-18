@@ -44,7 +44,7 @@ var url = window.location.href;
   console.log('jwtToken is: ', jwtToken);
   
   //var x = document.getElementById("btn-login");
-  if(localStorage.getItem('jwtToken')!==""){
+  if(localStorage.getItem('jwtToken')){
     console.log('hello',)
     document.getElementById("message").innerHTML = "Congratulations.......you are logged in";
     //x.style.display = "none";
