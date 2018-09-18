@@ -2,28 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+    <title>Auth Service Example app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <style>
+
+        /* background */		
+        .hero {
+          background: grey center / cover;
+        }
+        @media (max-width: 768px) {
+          :root {
+            font-size: 90%;
+          }
+        }
+        
+            </style>
+  </head>
 <body> 
-    <div id="message"></div> 
+    <section class="hero is-fullheight">
+        <header class="hero-body">
+            <div class="is-overlay has-text-centered single-spaced" style="top: 92px;">
+                <h1 class="subtitle" id="message" style="color: white;"></h1> 
                       
               
-  <button id="btn-home-view" >
-      Home
-  </button>
-  <button id="btn-login" onclick="login()">
-      Log In with auth service
-  </button>
-  <button id="btn-login" onclick="signup()">
-       Sign Up with auth service
-  </button>
-  <button id="btn-logout" onclick="logout()" >
-    Log Out
-  </button>
-  
+                <a class="button is-dark" id="btn-home-view" >
+                    Home
+                </a>
+                <a class="button is-dark" id="btn-login"  onclick="login()">
+                    Log In with auth service
+                </a>
+                <a class="button is-dark" id="btn-signup" onclick="signup()">
+                     Sign Up with auth service
+                </a>
+                <a class="button is-dark" id="btn-logout" onclick="logout()" >
+                  Log Out
+                </a>
+            </div>
+          </header>
+
+    
+       
+</section>
 </body>
-<script src="./app.js" ></script>
+<script src="./app.js"></script>
 
 </html>
