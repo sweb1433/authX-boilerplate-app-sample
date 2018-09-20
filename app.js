@@ -2,10 +2,10 @@ document.getElementById("message").innerHTML = "login required!!!!!";
 
 function login() {
   //var myWindow = window.open("http://localhost:3001/#loginemail?apto=app1.com&apid=wenasgdj", "", "width=500,height=600");
-  window.location="[AUTHX_URL]/#loginemail?apto=[YOUR_REDIRECT_URL]&apid=[YOUR_UNIQUE_APID]";
+  window.location="https://authx.in/#loginemail?apto=[YOUR_REDIRECT_URL]&apid=[YOUR_UNIQUE_APID]";
 }
 function signup() {
-  window.location="[AUTHX_URL]/#register?apto=[YOUR_REDIRECT_URL]&apid=[YOUR_UNIQUE_APID]";
+  window.location="https://authx.in/#register?apto=[YOUR_REDIRECT_URL]&apid=[YOUR_UNIQUE_APID]";
 }
 var url = window.location.href;
 var z = document.getElementById("btn-logout");
