@@ -1,7 +1,7 @@
 # authX-boilerplate-app-sample
 ## Brief description of application setup with authX.in
 
-[![N|Solid](http://i0.wp.com/www.haashall.org/wp-content/uploads/2015/10/87cc0576629f9e533cd1d331fd98d8bc.png?resize=100%2C100)]https://authx.in/)
+[![N|Solid](http://i0.wp.com/www.haashall.org/wp-content/uploads/2015/10/87cc0576629f9e533cd1d331fd98d8bc.png?resize=100%2C100)](https://authx.in/)
 
 ## User guide
 
