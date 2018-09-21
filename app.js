@@ -1,11 +1,12 @@
-document.getElementById("message").innerHTML = "login required!!!!!";
+  document.getElementById("message").innerHTML = "login required!!!!!";
 
 function login() {
   //var myWindow = window.open("http://localhost:3001/#loginemail?apto=app1.com&apid=wenasgdj", "", "width=500,height=600");
-  window.location="https://authx.in/#loginemail?apto=[YOUR_REDIRECT_URL]&apid=[YOUR_UNIQUE_APID]";
+  window.location="https://authx.in/#loginemail?apto=[REDIRECT_URI]&apid=[UNIQUE_APP_ID]";
 }
 function signup() {
-  window.location="https://authx.in/#register?apto=[YOUR_REDIRECT_URL]&apid=[YOUR_UNIQUE_APID]";
+  //var myWindow = window.open("http://localhost:3001/#loginemail?apto=app1.com&apid=wenasgdj", "", "width=500,height=600");
+  window.location="https://authx.in/#register?apto=[REDIRECT_URI]&apid=[UNIQUE_APP_ID]";
 }
 var url = window.location.href;
 var z = document.getElementById("btn-logout");
@@ -21,10 +22,10 @@ if (z){
   //console.log('jwtToken is: ', jwtToken);
   
   //var x = document.getElementById("btn-login");
-  if(localStorage.getItem('jwtToken')){
+  if(localStorage.getItem('jwtToken') && localStorage.getItem('jwtToken')!== "undefined"){
     //console.log('hello',)
     document.getElementById("message").innerHTML = "Congratulations.......you are logged in";
-var x = document.getElementById("btn-login");
+    var x = document.getElementById("btn-login");
     var y = document.getElementById("btn-signup");
     var z = document.getElementById("btn-logout");
     if (x){
@@ -41,7 +42,7 @@ var x = document.getElementById("btn-login");
   }
 function logout() {
   console.log('Logged Out');
-  var x = document.getElementById("btn-login");
+    var x = document.getElementById("btn-login");
     var y = document.getElementById("btn-signup");
     var z = document.getElementById("btn-logout");
     if (x){
@@ -59,3 +60,4 @@ function logout() {
   document.getElementById("btn-login").disabled = false;
   setTimeout(function(){ document.getElementById("message").innerHTML = "login required!!!!!";}, 3000);
 }
+  // </script>
